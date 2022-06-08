@@ -6,7 +6,7 @@ namespace projekt_zaliczeniowy
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Controller controller = new Controller();
         }
     }
 }
