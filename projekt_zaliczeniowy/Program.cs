@@ -6,7 +6,9 @@ namespace projekt_zaliczeniowy
     {
         static void Main(string[] args)
         {
-            Controller controller = new Controller();
+            MainController mc = new MainController();
+            mc.Controlleres.Add(new BasicController());
+            mc.Start();
         }
     }
 }
