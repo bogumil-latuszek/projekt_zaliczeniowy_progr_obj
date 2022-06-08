@@ -18,26 +18,6 @@ namespace projekt_zaliczeniowy
         public virtual bool Start() { Console.WriteLine("bazowe działanie"); return true; }
     }
 
-    public class Create_ASCII_Controller : IController
-    {
-        public string GetDescription()
-        {
-            return "Rozpocznij tworzenie ASCII art na podstawie" +
-                "obrazu .png ";
-        }
-
-        public bool Start()
-        {
-            Console.WriteLine("Rozpoczynam tworzenie ASCII art, podaj" +
-                "ścieżkę do obrazu .png który będzie użyty jako podstawa");
-
-            
-
-            return true;
-        }
-
-    }
-
     class MainController : IController
     {   
         public Core core { get; set; }
